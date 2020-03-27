@@ -5,7 +5,7 @@ import Slider from '@material-ui/core/Slider';
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+
   },
 });
 
@@ -25,7 +25,7 @@ export default function DiscreteSlider(props) {
 
   return (
     <div className={classes.root}>
-      <Typography id="discrete-slider" gutterBottom>
+      <Typography class ="label" id="discrete-slider" gutterBottom>
         Population Density
       </Typography>
       <Slider
@@ -39,19 +39,19 @@ export default function DiscreteSlider(props) {
         min={0}
         max={100}
       />
-      <Typography id="discrete-slider" gutterBottom>
+      <Typography class ="label"  id="discrete-slider" gutterBottom>
         Movement
       </Typography>
       <Slider
-        defaultValue={30}
+        defaultValue={3}
         onChange={handleMovement}
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider"
         valueLabelDisplay="auto"
-        step={10}
+        step={1}
         marks
         min={0}
-        max={100}
+        max={10}
       />
     </div>
   );

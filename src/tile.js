@@ -6,7 +6,7 @@ import Particles from 'react-particles-js';
 class Tile extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { density: 0, movement: 0 };
+		this.state = { density: 10, movement: 1 };
 		this.movementHandler = this.movementHandler.bind(this);
 	}
 
@@ -21,58 +21,65 @@ class Tile extends Component {
 	render() {
 		return (
 			<AppWrapper>
-				<Controls
-					movement={this.movementHandler}
-					density={this.densityHandler}
-				/>
+                <TitleWrapper>
+                    coviz-19
+                </TitleWrapper>
 
-				<TileWrapper>
-					<Particles
-						params={{
-							particles: {
-								number: {
-									value: 60,
-									density: {
-										enable: true,
-										value_area: 1500
-									}
-								},
-								line_linked: {
+				<Particles
+					height={600}
+					width={800}
+					style={{ backgroundColor: '#44475a', borderRadius: '15px' }}
+					params={{
+						particles: {
+							number: {
+								value: this.state.density,
+								density: {
 									enable: true,
-									opacity: 0.02
-								},
-								move: {
-									direction: 'right',
-									speed: 0.05
-								},
-								size: {
-									value: 1
-								},
-								opacity: {
-									anim: {
-										enable: true,
-										speed: 1,
-										opacity_min: 0.05
-									}
+									value_area: 1500
 								}
 							},
-							interactivity: {
-								events: {
-									onclick: {
-										enable: true,
-										mode: 'push'
-									}
-								},
-								modes: {
-									push: {
-										particles_nb: 1
-									}
+							line_linked: {
+								enable: true,
+								opacity: 0.5,
+								distance: 60
+							},
+							move: {
+								direction: 'right',
+								speed: this.state.movement
+							},
+							size: {
+								value: 3
+							},
+							opacity: {
+								anim: {
+									enable: false,
+									speed: 1,
+									opacity_min: 0.05
+								}
+							}
+						},
+						interactivity: {
+							events: {
+								onclick: {
+									enable: false,
+									mode: 'push'
 								}
 							},
-							retina_detect: true
-						}}
+							modes: {
+								push: {
+									particles_nb: 1
+								}
+							}
+						},
+						retina_detect: true
+					}}
+				/>
+                <ControlWrapper>
+					<Controls
+						movement={this.movementHandler}
+						density={this.densityHandler}
 					/>
-				</TileWrapper>
+				</ControlWrapper>
 			</AppWrapper>
 		);
 	}
@@ -80,17 +87,30 @@ class Tile extends Component {
 
 export default Tile;
 
-const TileWrapper = styled.div`
-	box-shadow: 5px 0px 40px black;
-	border-radius: 15px;
+const TitleWrapper = styled.h1`
 `;
 
 const AppWrapper = styled.div`
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin-top: 10vw;
+	grid-template-columns: .7fr 1fr;
 	width: 70vw;
 	height: 600px;
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #f8f8f2;
+	padding: 100px;
+	border-radius: 15px;
+`;
+
+const ControlWrapper = styled.div`
+    max-width: 300px;
+    margin-top: -150px;
+    margin-right: -150px;
+    height: min-content;
+    text-align: right;
+    padding: 15px;
+    background-color: #bcbcbc;
+    opacity: .7;
+    border-radius: 15px;
 `;
