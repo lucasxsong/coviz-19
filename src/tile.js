@@ -44,8 +44,9 @@ class Tile extends Component {
 								distance: 60
 							},
 							move: {
-								direction: 'right',
-								speed: this.state.movement
+								direction: 'none',
+                                speed: this.state.movement,
+                                bounce: false
 							},
 							size: {
 								value: 3
@@ -104,12 +105,12 @@ const AppWrapper = styled.div`
 `;
 
 const ControlWrapper = styled.div`
-    max-width: 300px;
-    margin-top: -150px;
+    max-width: max-content;
+    margin-top: -200px;
     margin-right: -150px;
     height: min-content;
     text-align: right;
-    padding: 15px;
+    padding: 15px 55px 15px 55px;
     background-color: #bcbcbc;
     opacity: .7;
     border-radius: 15px;
