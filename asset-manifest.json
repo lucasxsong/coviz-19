@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/coviz-19/static/css/main.cdaebc03.chunk.css",
+    "main.js": "/coviz-19/static/js/main.30a9d0da.chunk.js",
+    "main.js.map": "/coviz-19/static/js/main.30a9d0da.chunk.js.map",
+    "runtime-main.js": "/coviz-19/static/js/runtime-main.787bba73.js",
+    "runtime-main.js.map": "/coviz-19/static/js/runtime-main.787bba73.js.map",
+    "static/js/2.38b89737.chunk.js": "/coviz-19/static/js/2.38b89737.chunk.js",
+    "static/js/2.38b89737.chunk.js.map": "/coviz-19/static/js/2.38b89737.chunk.js.map",
+    "index.html": "/coviz-19/index.html",
+    "precache-manifest.51c16f551e424d1abb8385aeaa1c57c1.js": "/coviz-19/precache-manifest.51c16f551e424d1abb8385aeaa1c57c1.js",
+    "service-worker.js": "/coviz-19/service-worker.js",
+    "static/css/main.cdaebc03.chunk.css.map": "/coviz-19/static/css/main.cdaebc03.chunk.css.map",
+    "static/js/2.38b89737.chunk.js.LICENSE.txt": "/coviz-19/static/js/2.38b89737.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.787bba73.js",
+    "static/js/2.38b89737.chunk.js",
+    "static/css/main.cdaebc03.chunk.css",
+    "static/js/main.30a9d0da.chunk.js"
+  ]
+}
