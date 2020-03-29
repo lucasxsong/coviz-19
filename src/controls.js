@@ -2,10 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
+import './App.css';
 
 const useStyles = makeStyles({
 	root: {
-		width: 400
+        width: '35vw',
 	}
 });
 export default function DiscreteSlider(props) {
@@ -19,6 +20,7 @@ export default function DiscreteSlider(props) {
 	};
 
 	const pmarks = [
+        { value: 5, label: 'Zzyzx' },
         { value: 21, label: 'Riverside' },
 		{ value: 40, label: 'Portland' },
 		{ value: 66, label: 'San Francisco' },
@@ -26,7 +28,7 @@ export default function DiscreteSlider(props) {
 	];
 
 	const mmarks = [
-		{ value: 1, label: 'Full Lockdown' },
+		{ value: .3, label: 'Shelter in Place' },
 		{ value: 5, label: 'Essential Travel' },
 		{ value: 8, label: 'No Lockdown' }
 	];
@@ -40,7 +42,7 @@ export default function DiscreteSlider(props) {
 				defaultValue={30}
 				onChange={handleDensity}
 				aria-labelledby="discrete-slider"
-				step={10}
+				step={5}
 				min={0}
 				max={100}
 				marks={pmarks}
@@ -52,7 +54,7 @@ export default function DiscreteSlider(props) {
 				defaultValue={3}
 				onChange={handleMovement}
 				aria-labelledby="discrete-slider"
-				step={1}
+				step={.1}
 				marks={mmarks}
 				min={0}
 				max={10}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Controls from './controls.js';
 import Particles from 'react-particles-js';
+import './App.css';
 
 class Tile extends Component {
 	constructor(props) {
@@ -21,13 +22,11 @@ class Tile extends Component {
 	render() {
 		return (
 			<AppWrapper>
-                <TitleWrapper>
-                    coviz-19
-                </TitleWrapper>
+				<TitleWrapper>coviz-19<DescWrapper></DescWrapper></TitleWrapper>
+                
 
 				<Particles
-					height={600}
-					width={800}
+                    className="particles"
 					style={{ backgroundColor: '#44475a', borderRadius: '15px' }}
 					params={{
 						particles: {
@@ -45,8 +44,8 @@ class Tile extends Component {
 							},
 							move: {
 								direction: 'none',
-                                speed: this.state.movement,
-                                bounce: false
+								speed: this.state.movement,
+								bounce: false
 							},
 							size: {
 								value: 3
@@ -75,7 +74,7 @@ class Tile extends Component {
 						retina_detect: true
 					}}
 				/>
-                <ControlWrapper>
+				<ControlWrapper>
 					<Controls
 						movement={this.movementHandler}
 						density={this.densityHandler}
@@ -89,11 +88,22 @@ class Tile extends Component {
 export default Tile;
 
 const TitleWrapper = styled.h1`
+	font-size: 4rem;
+	@media (max-width: 800px) {
+		font-size: 1.7rem;
+	}
+`;
+
+const DescWrapper = styled.h1`
+	font-size: 4rem;
+	@media (max-width: 800px) {
+		font-size: 2rem;
+	}
 `;
 
 const AppWrapper = styled.div`
 	display: grid;
-	grid-template-columns: .7fr 1fr;
+	grid-template-columns: 0.8fr 1fr;
 	width: 70vw;
 	height: 600px;
 	margin-top: 50px;
@@ -101,17 +111,27 @@ const AppWrapper = styled.div`
 	margin-right: auto;
 	background-color: #f8f8f2;
 	padding: 100px;
-	border-radius: 15px;
+    border-radius: 15px;
+    
+    @media(max-width: 800px) {
+        width: 100vw;
+        height: 90vh;
+        padding: 20px;
+    }
 `;
 
 const ControlWrapper = styled.div`
-    max-width: max-content;
-    margin-top: -200px;
-    margin-right: -150px;
-    height: min-content;
-    text-align: right;
-    padding: 15px 55px 15px 55px;
-    background-color: #bcbcbc;
-    opacity: .7;
+	max-width: max-content;
+	margin-top: -200px;
+	margin-right: -150px;
+	height: min-content;
+	text-align: right;
+	padding: 15px 55px 15px 55px;
+	background-color: #bcbcbc;
+	opacity: 0.7;
     border-radius: 15px;
+    @media(max-width: 800px) {
+        margin-top: -300px;
+        margin-right: -200px;
+    }
 `;
