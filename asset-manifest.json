@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/coviz-19/static/css/main.cdaebc03.chunk.css",
-    "main.js": "/coviz-19/static/js/main.30a9d0da.chunk.js",
-    "main.js.map": "/coviz-19/static/js/main.30a9d0da.chunk.js.map",
+    "main.css": "/coviz-19/static/css/main.a22b379d.chunk.css",
+    "main.js": "/coviz-19/static/js/main.bce27a21.chunk.js",
+    "main.js.map": "/coviz-19/static/js/main.bce27a21.chunk.js.map",
     "runtime-main.js": "/coviz-19/static/js/runtime-main.787bba73.js",
     "runtime-main.js.map": "/coviz-19/static/js/runtime-main.787bba73.js.map",
-    "static/js/2.38b89737.chunk.js": "/coviz-19/static/js/2.38b89737.chunk.js",
-    "static/js/2.38b89737.chunk.js.map": "/coviz-19/static/js/2.38b89737.chunk.js.map",
+    "static/js/2.29f2d5aa.chunk.js": "/coviz-19/static/js/2.29f2d5aa.chunk.js",
+    "static/js/2.29f2d5aa.chunk.js.map": "/coviz-19/static/js/2.29f2d5aa.chunk.js.map",
     "index.html": "/coviz-19/index.html",
-    "precache-manifest.c01354359513082cdf2f99e77be07d22.js": "/coviz-19/precache-manifest.c01354359513082cdf2f99e77be07d22.js",
+    "precache-manifest.2ffd9cf219d68f66a3ab9de7ab8701ad.js": "/coviz-19/precache-manifest.2ffd9cf219d68f66a3ab9de7ab8701ad.js",
     "service-worker.js": "/coviz-19/service-worker.js",
-    "static/css/main.cdaebc03.chunk.css.map": "/coviz-19/static/css/main.cdaebc03.chunk.css.map",
-    "static/js/2.38b89737.chunk.js.LICENSE.txt": "/coviz-19/static/js/2.38b89737.chunk.js.LICENSE.txt"
+    "static/css/main.a22b379d.chunk.css.map": "/coviz-19/static/css/main.a22b379d.chunk.css.map",
+    "static/js/2.29f2d5aa.chunk.js.LICENSE.txt": "/coviz-19/static/js/2.29f2d5aa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.787bba73.js",
-    "static/js/2.38b89737.chunk.js",
-    "static/css/main.cdaebc03.chunk.css",
-    "static/js/main.30a9d0da.chunk.js"
+    "static/js/2.29f2d5aa.chunk.js",
+    "static/css/main.a22b379d.chunk.css",
+    "static/js/main.bce27a21.chunk.js"
   ]
 }
